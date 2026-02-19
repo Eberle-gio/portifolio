@@ -1,0 +1,158 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+
+:root {
+    --cor-primaria: #1b4332;      
+    --cor-secundaria: #ff7b00;    
+    --cor-clara: #ffffff;
+    --cor-cinza: #e9ecef;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+.header {
+    background-color: var(--cor-primaria);
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: var(--cor-clara);
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: var(--cor-clara);
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--cor-secundaria);
+}
+
+
+.intro {
+    padding: 80px 0;
+    text-align: center;
+    background-color: var(--cor-cinza);
+}
+
+.intro h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-clara);
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+
+.section {
+    padding: 80px 0;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+    color: var(--cor-primaria);
+}
+
+
+.carrossel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    background-color: var(--cor-clara);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    width: 250px;
+    text-align: center;
+    transition: 0.4s ease;
+}
+
+.card.active {
+    transform: scale(1.1);
+}
+
+.seta {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--cor-primaria);
+    padding: 10px;
+}
+
+
+.footer {
+    background-color: var(--cor-primaria);
+    color: var(--cor-clara);
+    text-align: center;
+    padding: 20px 0;
+}
