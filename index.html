@@ -1,113 +1,161 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Giovana Lopes | Portfólio</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
 
     <!-- Fonte moderna -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
-</head>
-    <body>
-
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!-- HEADER -->
     <header class="header">
-        <div class="container nav-container">
-            <img src="assets/imagens/GL.png" class="logo">
+      <div class="container nav-container">
+        <img src="assets/images/GL.png" class="logo" />
 
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#futuros">Futuros</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#futuros">Futuros</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <!-- INTRO -->
     <section class="intro">
-    <div class="intro-content">
-
-        <img src="assets/imagens/GLE.png" class="logo-intro">
+      <div class="intro-content">
+        <img src="assets/images/GLE.png" class="logo-intro" />
 
         <h1 class="nome-destaque">Giovana Lopes Eberle</h1>
 
-        <p class="subtitulo">
-            Graduanda em Engenharia de Software
-        </p>
-
-    </div>
-</section>
+        <p class="subtitulo">Graduanda em Engenharia de Software</p>
+      </div>
+    </section>
 
     <!-- SOBRE -->
     <section id="sobre" class="section">
-        <div class="container">
-            <h2>Sobre Mim</h2>
-            <p>
-                Estudante de Engenharia de Software apaixonada por desenvolvimento web,
-                criando soluções que geram impacto real.
-            </p>
+      <div class="container sobre-container">
+        <!-- FOTO -->
+        <div class="sobre-img">
+          <img src="assets/images/foto-eu.jpeg" alt="Giovana Lopes" />
         </div>
+
+        <!-- TEXTO + SKILLS -->
+        <div class="sobre-texto">
+          <h2>Sobre Mim</h2>
+
+          <p>
+            Sou estudante de Engenharia de Software, com foco no desenvolvimento
+            de aplicações web modernas e funcionais. Tenho experiência com HTML,
+            CSS e JavaScript, além de estar evoluindo com tecnologias como
+            React, Java e banco de dados.
+          </p>
+
+          <p>
+            Gosto de transformar ideias em soluções reais, unindo design e
+            usabilidade para criar interfaces intuitivas e agradáveis.
+          </p>
+
+          <!-- SKILLS -->
+          <div class="skills-inline">
+            <div class="skill-item">
+              <img src="assets/icon/html-5.png" />
+              <span>HTML</span>
+            </div>
+
+            <div class="skill-item">
+              <img src="assets/icon/css-3.png" />
+              <span>CSS</span>
+            </div>
+
+            <div class="skill-item">
+              <img src="assets/icon/js.png" />
+              <span>JavaScript</span>
+            </div>
+
+            <div class="skill-item">
+              <img src="assets/icon/react-svgrepo-com.png" />
+              <span>React</span>
+            </div>
+
+            <div class="skill-item">
+              <img src="assets/icon/java.png" />
+              <span>Java</span>
+            </div>
+
+            <div class="skill-item">
+              <img src="assets/icon/mysql.png" />
+              <span>MySQL</span>
+            </div>
+
+            <div class="skill-item">
+              <img src="assets/icon/git.png" />
+              <span>Git</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- PROJETOS -->
     <section id="projetos" class="section destaque">
-        <div class="container">
-            <h2>Projetos</h2>
+      <div class="container">
+        <h2>Projetos</h2>
 
-            <div class="carrossel">
+        <div class="carrossel">
+          <button class="seta esquerda">&#10094;</button>
 
-                <button class="seta esquerda">&#10094;</button>
-
-                <div class="cards">
-
-                    <div class="card active">
-                        <h3>Sistema de Monitorias</h3>
-                        <p>Auxílio para alunos em dependência.</p>
-                    </div>
-
-                    <div class="card">
-                        <h3>Papel Bio Laranja</h3>
-                        <p>Projeto sustentável com impacto social.</p>
-                    </div>
-
-                    <div class="card">
-                        <h3>To-Do Web App</h3>
-                        <p>Gerenciamento de tarefas moderno.</p>
-                    </div>
-
-                </div>
-
-                <button class="seta direita">&#10095;</button>
-
+          <div class="cards">
+            <div class="card">
+              <h3>Sistema de Monitorias</h3>
+              <p>Auxílio para alunos em dependência.</p>
             </div>
+
+            <div class="card">
+              <h3>Papel Bio Laranja</h3>
+              <p>Projeto sustentável com impacto social.</p>
+            </div>
+
+            <div class="card">
+              <h3>To-Do Web App</h3>
+              <p>Gerenciamento de tarefas moderno.</p>
+            </div>
+          </div>
+
+          <button class="seta direita">&#10095;</button>
         </div>
+      </div>
     </section>
 
     <!-- FUTUROS -->
     <section id="futuros" class="section">
-        <div class="container">
-            <h2>Projetos Futuros</h2>
-            <p>Em breve novos projetos inovadores...</p>
-        </div>
+      <div class="container">
+        <h2>Projetos Futuros</h2>
+        <p>Em breve novos projetos inovadores...</p>
+      </div>
     </section>
 
     <!-- CONTATO -->
     <section id="contato" class="section">
-        <div class="container">
-            <h2>Contato</h2>
-            <p>Email: seuemail@email.com</p>
-        </div>
+      <div class="container">
+        <h2>Contato</h2>
+        <p>Email: seuemail@email.com</p>
+      </div>
     </section>
 
     <!-- FOOTER -->
     <footer class="footer">
-        <p>© 2026 Giovana Lopes</p>
+      <p>© 2026 Giovana Lopes</p>
     </footer>
-        <script src="js/script.js"></script>
-    </body>
+    <script src="js/script.js"></script>
+  </body>
 </html>
