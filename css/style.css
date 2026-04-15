@@ -1,4 +1,3 @@
-/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -15,21 +14,18 @@ body {
   color: #2a2a2a;
 }
 
-/* CORES */
 :root {
   --cor-primaria: #331e38;
   --cor-secundaria: #b2a59b;
   --cor-clara: #ffffff;
 }
 
-/* CONTAINER */
 .container {
   width: 90%;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: auto;
 }
 
-/* HEADER */
 .header {
   background: linear-gradient(135deg, #73657e, #1b0022);
   backdrop-filter: blur(10px);
@@ -71,7 +67,6 @@ body {
   position: relative;
 }
 
-/* linha animada */
 .nav-links a::after {
   content: "";
   position: absolute;
@@ -87,7 +82,6 @@ body {
   width: 100%;
 }
 
-/* INTRO FULL SCREEN */
 .intro {
   height: 99vh;
   display: flex;
@@ -99,7 +93,6 @@ body {
   background: linear-gradient(135deg, #1b0022, #73657e);
 }
 
-/* ELEMENTO DE FUNDO DECORATIVO */
 .intro::before {
   content: "";
   position: absolute;
@@ -126,19 +119,16 @@ body {
   filter: blur(100px);
 }
 
-/* CONTEÚDO CENTRAL */
 .intro-content {
   text-align: center;
   z-index: 2;
 }
 
-/* LOGO */
 .logo-intro {
   width: 250px;
   opacity: 1;
 }
 
-/* NOME */
 .nome-destaque {
   font-size: 3.8rem;
   color: #e0dad5;
@@ -146,13 +136,11 @@ body {
   font-family: "Playfair Display", serif;
 }
 
-/* SUBTITULO */
 .subtitulo {
   color: #b2a59b;
   font-size: 1.5rem;
 }
 
-/* SECTIONS */
 .section {
   padding: 80px 0;
 }
@@ -170,7 +158,6 @@ body {
   flex-wrap: wrap;
 }
 
-/* IMAGEM */
 .sobre-img img {
   width: 280px;
   border-radius: 20px;
@@ -184,7 +171,6 @@ body {
   transform: scale(1.03);
 }
 
-/* TEXTO */
 .sobre-texto {
   flex: 1;
 }
@@ -198,7 +184,6 @@ body {
   line-height: 1.6;
 }
 
-/* SKILLS DENTRO DO SOBRE */
 .skills-inline {
   display: flex;
   flex-wrap: wrap;
@@ -206,7 +191,6 @@ body {
   margin-top: 25px;
 }
 
-/* ITEM */
 .skill-item {
   display: flex;
   align-items: center;
@@ -221,24 +205,20 @@ body {
   transition: 0.3s;
 }
 
-/* ÍCONE */
 .skill-item img {
   width: 20px;
 }
 
-/* HOVER */
 .skill-item:hover {
   transform: scale(1.08);
   background: #4c2d53;
   color: white;
 }
 
-/* DESTAQUE */
 .destaque {
   background: #f1eeee;
 }
 
-/* CARROSSEL */
 .carrossel {
   display: flex;
   align-items: center;
@@ -246,41 +226,99 @@ body {
 }
 
 .cards {
-  display: flex;
-  gap: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 30px;
+  margin-top: 40px;
 }
 
-.cards .card {
-  background: var(--cor-clara);
-  padding: 30px;
-  border-radius: 12px;
-  width: 290px;
-  text-align: center;
-  transition: 0.4s;
-  opacity: 0.9;
-  transform: scale(1);
+.card {
+  background: linear-gradient(135deg, #ffffff, #4f255a);
+  border-radius: 16px;
+  overflow: hidden;
+
+  transition: 0.4s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-.cards :hover {
-  opacity: 1;
-  transform: scale(1.07);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+.card-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
 }
 
-/* SETAS */
-.seta {
-  background: none;
-  border: none;
-  font-size: 2.5rem;
-  cursor: pointer;
+.card-content {
+  padding: 20px;
+}
+
+.card-content h3 {
   color: var(--cor-primaria);
-  padding: 40px;
+  margin-bottom: 10px;
 }
 
-/* FOOTER */
+.card-content p {
+  font-size: 0.9rem;
+  color: #ffffff;
+}
+
+.techs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
+
+.techs span {
+  background: white;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+}
+
+.botoes {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.btn {
+  background: var(--cor-primaria);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+.btn-outline {
+  border: 1px solid var(--cor-primaria);
+  padding: 8px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  color: var(--cor-primaria);
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
 .footer {
   background: var(--cor-primaria);
   color: var(--cor-clara);
   text-align: center;
   padding: 20px;
+}
+
+@media (max-width: 900px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
 }
